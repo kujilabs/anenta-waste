@@ -29,5 +29,3 @@ markdown: kramdown
 # theme: minima
 sass:
   style: compressed
-gems:
-  - jekyll-bootstrap-sass  

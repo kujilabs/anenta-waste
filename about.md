@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: bob
 title: About
 permalink: /about/
 ---

@@ -134,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-seo-tag
   rb-fsevent (<= 0.9.4)
 
 RUBY VERSION

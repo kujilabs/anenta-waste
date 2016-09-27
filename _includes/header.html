@@ -1,29 +1,20 @@
-<!-- HEADER -->
-<header class="header{% if getCurrentUrl() == '/' %} header-index{% endif %}">
+<header>
     <div class="container">
 
-        <!-- logo -->
         <div class="logo">
             <a href="/">
                 <img class="l-black" src="{{site.url}}{{site.baseurl}}/images/layout/logo-black.png" />
                 <img class="l-white" src="{{site.url}}{{site.baseurl}}/images/layout/logo-white.png" />
             </a>
         </div>
-        <!--End logo-->
 
-        <!-- Navigation Menu -->
         <nav class='navigation'>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/ready-to-go/">Ready to Go</a></li>
-                <li><a href="/made-to-measure/">Made to Measure</a></li>
-                <li><a href="/public-sector/">Public Sector</a></li>
-                <li><a href="/platform/">Platform</a></li>
-                <li><a href="https://vector.anenta.com">Sign in</a></li>
+                {% for link in site.data.top_navigation %}
+                    <li><a href="{{site.url}}{{site.baseurl}}{{link.url}}">{{link.text}}</a></li>
+                {% endfor %}
             </ul>
         </nav>
-        <!--End Navigation Menu -->
 
     </div>
 </header>
-<!-- END HEADER -->

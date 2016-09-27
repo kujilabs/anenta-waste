@@ -23,9 +23,11 @@
             </div>
           
                 <div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-sm">
-                    <p>Anenta Ltd<br/>The Light Bulb<br/>1 Filament Walk<br/>London, SW18 4GQ</p>
+                    <p>{{ site.anenta.company_name }}<br/></p>
+
+                    {{ site.anenta.address | join: '<br/>' }}
                     <ul class="link-small">
-                        <li><i class="fa fa-phone left"></i>033 0122 2143</li>
+                        <li><i class="fa fa-phone left"></i>{{ site.anenta.telephone }}</li>
                     </ul>
                 </div>
           
@@ -39,7 +41,7 @@
     <section class="copyright ptb-60">
         <div class="container">
             <p class="">
-                © 2015 <a><b>Anenta Ltd</b></a>. All Rights Reserved.
+                © {{ 'now' | date: "%Y" }} <a><b>{{ site.anenta.company_name }}</b></a>. All Rights Reserved.
             </p>
         </div>
     </section>

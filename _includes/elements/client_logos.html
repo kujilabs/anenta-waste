@@ -1,44 +1,14 @@
 <!-- Client Logos Section -->
-
-Make into object
 <section id="client-logos" class="wow fadeIn ptb ptb-sm-30">
     <div class="container">
         <div class="owl-carousel client-carousel nf-carousel-theme ">
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/camden.jpg" alt="" />
+            {% for client in site.data.client_logos %}
+                <div class="item">
+                    <div class="client-logo">
+                        <img src="{{site.url}}{{site.baseurl}}/images/logos/{{client.image}}.jpg" alt="" />
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/grasshoppers.jpg" alt="" />
-                </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/nhs-england.jpg" alt="" />
-                </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/islington.jpg" alt="" />
-                </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/mpp.jpg" alt="" />
-                </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/soclean.jpg" alt="" />
-                </div>
-            </div>
-            <div class="item">
-                <div class="client-logo">
-                    <img src="{{site.url}}{{site.baseurl}}/images/logos/ranc-care-homes.jpg" alt="" />
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>

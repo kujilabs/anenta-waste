@@ -1118,7 +1118,7 @@ form label.error {
 
 .header {
     background-color: #000;
-    background-image: url('/static/images/full/04.jpg');
+    background-image: url('/images/backgrounds/network.jpg');
     color: #323232;
     padding: 0px;
     position: relative;
@@ -1165,8 +1165,8 @@ form label.error {
         /*border-bottom: 1px solid #eee;*/
     }
 
-.background--dark .header, .background--dark .header a,
-.background--dark .header .side-menu-btn ul li a.right-icon, .background--dark .header .mobile-menu-icon {
+.background-dark .header, .background-dark .header a,
+.background-dark .header .side-menu-btn ul li a.right-icon, .background-dark .header .mobile-menu-icon {
     color: #fff;
 }
 
@@ -1178,7 +1178,7 @@ form label.error {
 }
     /*#menu-button.menu-opened .bar-icon,*/
     .header .side-menu-btn ul li a.right-icon:hover, .header.sticky .side-menu-btn ul li a.right-icon:hover, .header .mobile-menu-icon:hover,
-    .background--dark .header .navigation a:hover {
+    .background-dark .header .navigation a:hover {
         color: #e6ae49;
     }
 
@@ -1432,11 +1432,11 @@ header.sticky .navigation a.current-ele {
         margin-left: 16px;
     }
 
-    .background--dark .header .side-menu-btn ul li a.right-icon, .background--dark .header .mobile-menu-icon {
+    .background-dark .header .side-menu-btn ul li a.right-icon, .background-dark .header .mobile-menu-icon {
         color: #323232;
     }
 
-    .header .logo a img.l-black, /*.header.sticky .logo a img.l-color,*/ .background--dark .header .logo a img.l-black {
+    .header .logo a img.l-black, /*.header.sticky .logo a img.l-color,*/ .background-dark .header .logo a img.l-black {
         opacity: 1;
     }
 
@@ -2322,7 +2322,7 @@ height:100%;
 }
 
 .bg-img4 {
-    background-image: url("/static/images/full/04.jpg");
+    background-image: url("/images/backgrounds/network.jpg");
 }
 
 .bg-img5 {

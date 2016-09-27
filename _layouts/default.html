@@ -1,90 +1,60 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="mFTNemNo4e1LmxXHBmwlqrbbcJfwkQwZCuVPAtdN0bA" />
-    <title>???????</title>
-    <meta name="description" content="??????">
     <meta name="viewport" content="width=device-width">
+
+    {% seo %}
+    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "{{ site.anenta.web_address}}",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "{{site.anenta.int_telephone}}",
+          "contactType": "customer service"
+        }]
+      }
+    </script>
 
     <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/css/main.css"/>
     
-
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "http://www.anentawaste.com",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+44 330 122 2143",
-        "contactType": "customer service"
-      }]
-    }
-    </script>
-    
   </head>
 
-  <body class="full-intro background--dark">
+  <body class="{{ page.extra_css_classes }}">
 
-
-    <!-- Preloader -->
     <section id="preloader">
-        <div class="loader" id="loader">
-            <div class="loader-img"></div>
-        </div>
+      <div class="loader" id="loader">
+        <div class="loader-img"></div>
+      </div>
     </section>
-    <!-- End Preloader -->
-
-    <!-- Site Wraper -->
+    
     <div class="wrapper">
-        <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-  
-        {% include header.html %}
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
 
-        {{ content }}
-
-        {% include footer.html %}
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
         
-      <!-- Scroll Top -->
       <a class="scroll-top">
-          <i class="fa fa-angle-double-up"></i>
+        <i class="fa fa-angle-double-up"></i>
       </a>
-      <!-- End Scroll Top -->
 
-    </div>
-    <!-- Site Wraper End -->         
+    </div>     
    
-    <!-- build:js /static/javascript/minified.js -->
-
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.min.js"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.easing.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/bootstrap.js"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.flexslider.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/background-check.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.viewportchecker.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.stellar.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/wow.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jPushMenu.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/jquery.fs.tipper.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/main.js"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/TweenLite.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/EasePack.min.js" type="text/javascript"></script>
-    <script src="{{site.url}}{{site.baseurl}}/javascript/pollyfill.js" type="text/javascript"></script>    
-
-    <!-- endbuild -->
-
+    {% for javascript in site.data.javascript_manifest %}
+      <script src="{{site.url}}{{site.baseurl}}/javascript/{{javascript.file}}" type="text/javascript"></script>
+    {% endfor %}
 
     <script type="text/javascript">
         window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
@@ -97,7 +67,6 @@
       window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
       heap.load("2665403334");
     </script>
-
 
     <script>
       (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);

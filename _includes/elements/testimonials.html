@@ -1,0 +1,21 @@
+<!-- Testimonials -->
+<section id="testimonial" class="overlay-dark80 dark-bg ptb-80 ptb-sm-40" style="background-image: url('{{site.url}}{{site.baseurl}}/images/backgrounds/network.jpg');" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="owl-carousel testimonial-carousel nf-carousel-theme white">
+
+          {% for testimonial in site.data.testimonials %}
+        
+            <div class="item">
+                <div class="testimonial text-center dark-color">
+                    <div class="container-icon"><i class="fa fa-quote-right"></i></div>
+                    <p class="lead">" {{testimonial.quote}} "</p>
+                    <h6 class="quote-author">{{testimonial.author}} <span style="font-weight: 400;">( {{testimonial.organisation}} )</span></h6>
+                </div>
+            </div>
+            
+          {% endfor %}   
+            
+        </div>
+    </div>
+</section>
+<!-- End Testimonials -->

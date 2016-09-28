@@ -28,6 +28,9 @@ markdown: kramdown
 sass:
   style: compressed
 
+gems: 
+  - jekyll-assets
+
 anenta: 
   company_name: Anenta Ltd
   web_address: https://www.anentawaste.com

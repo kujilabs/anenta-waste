@@ -1,20 +1,20 @@
 <header class="header">
-    <div class="container">
+  <div class="container">
 
-        <div class="logo">
-            <a href="/">
-                <img class="l-black" src="{{site.url}}{{site.baseurl}}/images/layout/logo-black.png" />
-                <img class="l-white" src="{{site.url}}{{site.baseurl}}/images/layout/logo-white.png" />
-            </a>
-        </div>
-
-        <nav class='navigation'>
-            <ul>
-                {% for link in site.data.top_navigation %}
-                    <li><a href="{{site.url}}{{site.baseurl}}{{link.url}}">{{link.text}}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-
+    <div class="logo">
+      <a href="/">
+        {% img 'layout/logo-black.png' class:'l-black' %}
+        {% img 'layout/logo-white.png' class:'l-white' %}
+      </a>
     </div>
+
+    <nav class='navigation'>
+      <ul>
+        {% for link in site.data.top_navigation %}
+          <li><a href="{{site.url}}{{site.baseurl}}{{link.url}}">{{link.text}}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+  </div>
 </header>

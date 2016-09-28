@@ -31,6 +31,26 @@ sass:
 gems: 
   - jekyll-assets
 
+autowrite: true
+
+assets:
+  sources:
+    - _assets/
+    - _assets/css/
+    - _assets/css/plugins/
+    - _assets/images/
+    - _assets/images/backgrounds/
+    - _assets/images/icons/sided-services/
+    - _assets/images/icons/
+    - _assets/images/layout/
+    - _assets/images/vector/
+    - _assets/js/
+    - _assets/fonts/
+  digest: false        
+  compress:
+    css: true  
+    js: true
+
 anenta: 
   company_name: Anenta Ltd
   web_address: https://www.anentawaste.com

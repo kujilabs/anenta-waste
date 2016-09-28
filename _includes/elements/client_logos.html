@@ -5,7 +5,7 @@
             {% for client in site.data.client_logos %}
                 <div class="item">
                     <div class="client-logo">
-                        <img src="{{site.url}}{{site.baseurl}}/images/logos/{{client.image}}.jpg" alt="" />
+                        {% img 'logos/{{client.image}}.jpg' %}
                     </div>
                 </div>
             {% endfor %}

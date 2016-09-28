@@ -30,6 +30,7 @@ sass:
 
 gems: 
   - jekyll-assets
+  - jekyll-seo-tag
 
 autowrite: true
 

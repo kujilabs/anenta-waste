@@ -17,7 +17,7 @@ email: contact@anenta.com
 title: Anenta Waste
 description: Simple Waste Management Solutions
 
-baseurl: "/anenta-waste" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kujilabs.github.io" # the base hostname & protocol for your site
 
 # Build settings
@@ -45,7 +45,7 @@ assets:
     - _assets/images/vector/
     - _assets/js/
     - _assets/fonts/
-  digest: false        
+  digest: true        
   compress:
     css: true  
     js: true

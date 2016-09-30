@@ -16,6 +16,7 @@
 email: contact@anenta.com
 title: Anenta Waste
 description: Simple Waste Management Solutions
+include: ['_redirects']
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site

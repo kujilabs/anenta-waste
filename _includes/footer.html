@@ -1,11 +1,11 @@
 <!-- FOOTER -->
-<footer class="footer pt-80">
+<footer class="footer pt-40">
 
   <div class="container">
 
-    <div class="row footer-info mb-60">
+    <div class="row footer-info mb-40">
       <div class="col-md-3 col-sm-12 col-xs-12 mb-sm-30">
-        <a class="footer-logo" href="home.html">{% img 'layout/logo-black.png' %}</a>
+        <a class="footer-logo" href="home.html">{% img 'layout/logo-white.png' %}</a>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12 mb-sm-30">
         <ul class="link">
@@ -24,24 +24,20 @@
         </ul>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12 text-right text-center-sm">
-        <p>{{ site.anenta.company_name }}<br/></p>
-        {{ site.anenta.address | join: '<br/>' }}
-        <ul class="link-small">
-          <li><i class="fa fa-phone left"></i>{{ site.anenta.telephone }}</li>
-        </ul>
+        <p><span style="display:block; margin-bottom:5px;">{{ site.anenta.company_name }}</span>
+          <span style="font-size:13px;">{{ site.anenta.address | join: '<br/>' }}</span>
+          <ul class="link-small">
+            <li><i class="fa fa-phone left"></i>{{ site.anenta.telephone }}</li>
+          </ul>
+        </p>
       </div>
     </div>
   </div>
-  
-  <hr />
 
   <section class="copyright ptb-60">
     <div class="container">
-      <p class="">
-        © {{ 'now' | date: "%Y" }} <a><b>{{ site.anenta.company_name }}</b></a>. All Rights Reserved.
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-        Proud sponsors of <a href="/grasshoppers-rfc-sponsorship">Grasshoppers RFC <i class="fa fa-trophy"></i></a>
-      </p>
+      <p class="pb-5">Proud sponsors of <a href="/grasshoppers-rfc-sponsorship">Grasshoppers RFC <i class="fa fa-trophy"></i></a></p>
+      <p style="font-size:12px;">© {{ 'now' | date: "%Y" }} {{ site.anenta.company_name }}. All Rights Reserved.</p>
     </div>
   </section>
 

@@ -62,11 +62,10 @@ DEPENDENCIES
   jekyll (= 3.2.1)
   jekyll-assets
   jekyll-seo-tag
-  rb-fsevent (<= 0.9.4)
   uglifier
 
 RUBY VERSION
-   ruby 2.1.2p95
+   ruby 2.3.0p0
 
 BUNDLED WITH
-   1.13.1
+   1.13.5

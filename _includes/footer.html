@@ -34,16 +34,24 @@
     </div>
   </div>
 
-  <section class="copyright ptb-60">
+  <section class="ptb-60">
     <div class="container">
-      <p class="pb-5">
-        Proud sponsors of <a href="/grasshoppers-rfc-sponsorship">Grasshoppers RFC <i class="fa fa-trophy"></i></a>
-      </p>
-      <p style="font-size:12px;">
-        <a href="/policies_licences_and_certificates">Policies, Licences and Certificates</a>
-        &nbsp;&bull;&nbsp;
-        © {{ 'now' | date: "%Y" }} {{ site.anenta.company_name }}. All Rights Reserved.
-      </p>
+      <div class="row">
+        <div class="col-sm-6 certificates">
+          <a href="/policies_licences_and_certificates">{% img 'logos/ISO-9001-registered.png' width:75 %}</a> &nbsp;
+          <a href="/policies_licences_and_certificates">{% img 'logos/ISO-14001-registered.png' width:75 %}</a> 
+        </div>
+        <div class="col-sm-6 copyright ">
+          <p class="pb-5">
+            Proud sponsors of <a href="/grasshoppers-rfc-sponsorship">Grasshoppers RFC <i class="fa fa-trophy"></i></a>
+          </p>
+          <p style="font-size:12px;">
+            <a href="/policies_licences_and_certificates">Policies, Licences and Certificates</a>
+            &nbsp;&bull;&nbsp;
+            © {{ 'now' | date: "%Y" }} {{ site.anenta.company_name }}. All Rights Reserved.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 

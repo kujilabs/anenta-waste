@@ -37,7 +37,9 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 
         $('.embed-link').on('click', function(event) {
             event.preventDefault();
-            var pdfURL = this.getAttribute("href");
+
+            var pdfURL = $(this).data("href");
+
 
             var options = {
                 pdfOpenParams: {

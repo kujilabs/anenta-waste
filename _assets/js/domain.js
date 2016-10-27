@@ -34,6 +34,22 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
       })
 
 
+
+        $('.embed-link').on('click', function(event) {
+            event.preventDefault();
+            var pdfURL = this.getAttribute("href");
+
+            var options = {
+                pdfOpenParams: {
+                    view: "FitV"
+                }
+            };
+
+            var myPDF = PDFObject.embed(pdfURL, "#pdf", options);
+            
+        });
+    
+
     });
 
     function openSite() {

@@ -48,6 +48,7 @@ assets:
     - _assets/images/vector/
     - _assets/js/
     - _assets/fonts/
+    - _assets/pdf/
   digest: true        
   compress:
     css: true  

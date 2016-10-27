@@ -11,6 +11,7 @@
 //= require imagesloaded.pkgd.min
 //= require jPushMenu
 //= require jquery.fs.tipper.min
+//= require pdfobject
 //= require domain
 //= require TweenLite.min
 //= require EasePack.min

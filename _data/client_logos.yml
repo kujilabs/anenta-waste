@@ -1,7 +1,5 @@
 - name: Camden
   image: camden
-- name: NHS England
-  image: nhs-england
 - name: Islington
   image: islington
 - name: MPP

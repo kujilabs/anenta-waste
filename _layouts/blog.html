@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <section id="blog" class="wow fadeIn pt-60 pb-60 pb-sm-15 animated" style="visibility: visible; animation-name: fadeIn;">
+
+    {% if page.picture %}
+      <img src="{{ page.picture }}" alt="Photo of a {{ page.title | downcase }}">
+    {% endif %}
+
+    <div class="pb-40">
+      <h3>{{ page.headline }}</h3>
+      <p class="lead">{{ page.sub-heading}}</p>
+      <span class="text-muted">by {{ page.author}}, {{ page.date | date: '%B %d, %Y' }}</span>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-7">
+        {{ content }}
+      </div>
+
+      <div class="col-md-4 col-sm-offset-1">
+
+        {% assign items = site.blog | sort: 'date' %}
+
+        {% for item in items reversed limit:6 %}
+          {% if item.title != page.title %}
+          <div style="border-bottom:1px solid #eee; margin-bottom:15px; padding-bottom:15px;">
+            <p><strong><a href="{{ item.url }}">{{ item.headline }}</a></strong></p>
+            <p><small>{{ item.date | date: '%B %d, %Y' }}</small></p>
+            <p>{{ item.sub-heading }}</p>
+          </div>
+          {% endif %}
+        {% endfor %}
+
+        <div class="mt-20"><a href="/blogs">All Posts</a></div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</div>

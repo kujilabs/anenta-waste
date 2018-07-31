@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+extra_css_classes: background-dark
+---
+
+<div class="container">
+  <section id="blog" class="wow fadeIn pt-60 pb-60 pb-sm-15 animated" style="visibility: visible; animation-name: fadeIn;">
+
+    <div class="text-center pb-40">
+      <h3>Anenta Blog Posts</h3>
+      <p class="lead">Somthing to say here, ideas?</p>
+    </div>
+
+    {% assign items = site.blog | sort: 'date' %}
+
+    {% for item in items reversed %}
+      <div style="border-bottom:1px solid #eee; margin-bottom:30px; padding-bottom:30px;">
+        <div class="pull-right" style="margin-top:15px;">
+          <a href="{{ item.url }}" class="btn btn-primary btn-xs">Read</a>
+        </div>
+        <h4><a href="{{ item.url }}">{{ item.headline }}</a></h4>
+        <p><small>by {{ item.author }}, {{ item.date | date: '%B %d, %Y' }}</small></p>
+        <p>{{ item.sub-heading }}</p>
+      </div>
+    {% endfor %}
+
+  </section>
+</div>
+

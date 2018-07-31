@@ -28,6 +28,12 @@ markdown: kramdown
 sass:
   style: compressed
 
+collections: 
+  news_items:
+    output: true
+  blog:
+    output: true
+
 gems: 
   - jekyll-assets
   - jekyll-seo-tag

@@ -28,13 +28,13 @@ markdown: kramdown
 sass:
   style: compressed
 
-collections: 
+collections:
   news_items:
     output: true
-  blog:
+  posts:
     output: true
 
-gems: 
+gems:
   - jekyll-assets
   - jekyll-seo-tag
 
@@ -55,12 +55,12 @@ assets:
     - _assets/js/
     - _assets/fonts/
     - _assets/pdf/
-  digest: true        
+  digest: true
   compress:
-    css: true  
+    css: true
     js: true
 
-anenta: 
+anenta:
   company_name: Anenta Ltd
   web_address: https://www.anentawaste.com
   int_telephone: +44 330 122 2143

@@ -24,7 +24,7 @@ layout: default
 
       <div class="col-md-4 col-sm-offset-1">
 
-        {% assign items = site.blog | sort: 'date' %}
+        {% assign items = site.posts | sort: 'date' %}
 
         {% for item in items reversed limit:6 %}
           {% if item.title != page.title %}

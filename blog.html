@@ -12,7 +12,7 @@ extra_css_classes: background-dark
       <p class="lead">Somthing to say here, ideas?</p>
     </div>
 
-    {% assign items = site.blog | sort: 'date' %}
+    {% assign items = site.posts | sort: 'date' %}
 
     {% for item in items reversed %}
       <div style="border-bottom:1px solid #eee; margin-bottom:30px; padding-bottom:30px;">

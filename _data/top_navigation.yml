@@ -8,6 +8,10 @@
   url: /public-sector
 - text: Platform
   url: /platform
+- text: News
+  url: /news
+- text: Blog
+  url: /blog
 - text: Sign in
   url: https://vector.anenta.com
 # - text: Flu Season

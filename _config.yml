@@ -34,7 +34,7 @@ collections:
   posts:
     output: true
 
-gems:
+plugins:
   - jekyll-assets
   - jekyll-seo-tag
 

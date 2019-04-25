@@ -3,12 +3,12 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 (function ($) {
     "use strict";
 
-    
 
-    
+
+
     $(window).load(function () {
         // ----------------------------------------------------------------------------------------------------------------------->
-        // SITE LOADER                     ||----------- 
+        // SITE LOADER                     ||-----------
         // ----------------------------------------------------------------------------------------------------------------------->
         $('#loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
@@ -19,19 +19,19 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
 
 
     // ---------------------------------------------------------------------------------------------------------------------------->
-    // GENERAL SCRIPTS FOR ALL PAGES    ||----------- 
+    // GENERAL SCRIPTS FOR ALL PAGES    ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
         openSite();
-            
-      $('.open-send-us-a-message').on('click', function() {
-        _gscq.push(['trackPage','/open/send-us-a-message']);  
-      })
 
-      $('.open-request-a-callback').on('click', function() {
-        _gscq.push(['trackPage','/open/request-a-callback']);  
-      })
+      // $('.open-send-us-a-message').on('click', function() {
+      //   _gscq.push(['trackPage','/open/send-us-a-message']);
+      // })
+
+      // $('.open-request-a-callback').on('click', function() {
+      //   _gscq.push(['trackPage','/open/request-a-callback']);
+      // })
 
 
 
@@ -48,9 +48,9 @@ var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
             };
 
             var myPDF = PDFObject.embed(pdfURL, "#pdf", options);
-            
+
         });
-    
+
 
     });
 
@@ -116,7 +116,7 @@ function scroll() {
     });
 
     $('#goto-about').on('click', function() {
-            
+
         $('html, body').animate({ scrollTop: $('#about').offset()['top'] - 100 }, 800);
     })
 
@@ -247,7 +247,7 @@ function sliderAll() {
         navigation: true,  // Show next and prev buttons
         pagination: true,  // Show pagination buttons
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        
+
     });
 
     // Image Slider
@@ -637,7 +637,7 @@ $(window).load(function () {
 (function($) {
 
   $.fn.menumaker = function(options) {
-      
+
       var cssmenu = $(this), settings = $.extend({
         title: "Menu",
         format: "dropdown",
@@ -649,7 +649,7 @@ $(window).load(function () {
         $(this).find("#menu-button").on('click', function(){
           $(this).toggleClass('menu-opened');
           var mainmenu = $(this).next('ul');
-          if (mainmenu.hasClass('open')) { 
+          if (mainmenu.hasClass('open')) {
             mainmenu.hide().removeClass('open');
           }
           else {
@@ -668,7 +668,7 @@ $(window).load(function () {
             $(this).toggleClass('submenu-opened');
             if ($(this).siblings('ul').hasClass('open')) {
                 $(this).siblings('ul').removeClass('open').hide();
-                
+
             }
             else {
                 $(this).siblings('ul').addClass('open').show();
@@ -684,7 +684,7 @@ $(window).load(function () {
         resizeFix = function() {
           if ($( window ).width() > 991) {
               cssmenu.find('ul').show();
-              
+
           }
 
           if ($(window).width() <= 991) {

@@ -16,7 +16,7 @@ function init() {
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(51.456037, -0.196574), // Anenta
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [
         {
@@ -205,7 +205,7 @@ function init() {
         ]
     };
 
-    // Get the HTML DOM element that will contain your map 
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
@@ -217,7 +217,7 @@ function init() {
         position: new google.maps.LatLng(51.456037, -0.196574),
         map: map,
         title: 'Nileforest',
-        icon: '{% capture image %}{% asset_path "layout/map-marker.png" %}{% endcapture %}{{ image }}'
+        icon: '{% capture image %}{% asset "layout/map-marker.png" %}{% endcapture %}{{ image }}'
 
     });
 };

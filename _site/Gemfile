@@ -17,6 +17,8 @@ require 'rbconfig'
 gem "jekyll", "3.8.5"
 
 
+
+
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima"
 
@@ -32,6 +34,6 @@ gem 'uglifier'
 group :jekyll_plugins do
   # gem "jekyll-github-metadata", "~> 1.0"
   # gem 'jekyll-bootstrap-sass'
-  gem "jekyll-assets"
+  gem "jekyll-assets", "3.0.9"
   gem "jekyll-seo-tag"
 end

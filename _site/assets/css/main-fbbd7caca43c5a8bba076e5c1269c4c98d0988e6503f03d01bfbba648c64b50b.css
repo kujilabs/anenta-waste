@@ -8745,15 +8745,15 @@ html[xmlns] .slides {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #323232; }
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Navigation Menu
   - Right Side Menu Button (Search, Cart, Bar, etc)
@@ -8771,7 +8771,7 @@ html[xmlns] .slides {
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style (Top, Bottom, Left, right)
   - Contents (Body, Container, Section, etc)
@@ -11863,6 +11863,11 @@ ul.project-detail-block, .project-detail-block ul {
 
   .text-center-sm {
     text-align: center !important; } }
+.covid-link {
+  color: red !important; }
+  .covid-link:hover {
+    color: white !important; }
+
 /* General styles for all menus */
 .cbp-spmenu {
   position: fixed; }

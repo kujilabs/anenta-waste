@@ -6,15 +6,15 @@
 
 
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Navigation Menu
   - Right Side Menu Button (Search, Cart, Bar, etc)
@@ -32,7 +32,7 @@
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style (Top, Bottom, Left, right)
   - Contents (Body, Container, Section, etc)
@@ -1192,13 +1192,13 @@ form label.error {
 }
 
 /* logo Style */
-.header .logo a img.l-white, 
+.header .logo a img.l-white,
 .header.sticky .logo a img.l-black {
     opacity: 1;
 }
 
 
-.header .logo a img.l-blank, 
+.header .logo a img.l-blank,
 .header.sticky .logo a img.l-white {
     opacity: 0;
 }
@@ -1539,14 +1539,14 @@ header.sticky .navigation a.current-ele {
 }
 
 .footer .link-small li {
-    color: #9a9a9a !important;    
+    color: #9a9a9a !important;
 }
 
 .footer .copyright {
     text-align: right;
     color: #9a9a9a;
     p {
-        color: #9a9a9a !important;    
+        color: #9a9a9a !important;
     }
 }
 
@@ -2105,7 +2105,7 @@ header.sticky .navigation a.current-ele {
 
     .side-menu .social {
         list-style:none;
-       
+
     }
         .side-menu .social li {
             display:inline-block;
@@ -3939,7 +3939,7 @@ ul.project-detail-block, .project-detail-block ul {
     }
     &.highlight {
         .list-group-item {
-            background-color:#d4eefb; 
+            background-color:#d4eefb;
             border-color:#a1d3ea;
         }
     }
@@ -3990,9 +3990,19 @@ ul.project-detail-block, .project-detail-block ul {
 
 
   .text-center-sm {
-    text-align: center !important; 
+    text-align: center !important;
   }
 
-  
+
 }
+
+
+.covid-link {
+    color: red !important;
+    &:hover {
+        color: white !important;
+    }
+}
+
+
 

@@ -5,8 +5,8 @@
     <description>Simple Waste Management Solutions</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 23 Jun 2020 17:56:08 +0100</pubDate>
-    <lastBuildDate>Tue, 23 Jun 2020 17:56:08 +0100</lastBuildDate>
+    <pubDate>Tue, 23 Jun 2020 19:35:55 +0100</pubDate>
+    <lastBuildDate>Tue, 23 Jun 2020 19:35:55 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>

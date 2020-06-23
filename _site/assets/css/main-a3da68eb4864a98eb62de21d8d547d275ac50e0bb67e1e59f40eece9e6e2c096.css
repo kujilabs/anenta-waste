@@ -8938,6 +8938,9 @@ p.color, .color, a.color, h1.color, h2.color, h3.color, h4.color, h5.color, h6.c
 .gray-bg h1, .gray-bg h2, .gray-bg h3, .gray-bg h4, .gray-bg h5, .gray-bg h6, .gray-bg .container-icon {
   color: #323232; }
 
+section#blog li {
+  color: #888; }
+
 /*Headings Style   ||-----------*/
 .separator {
   height: 1px;

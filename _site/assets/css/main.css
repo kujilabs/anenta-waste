@@ -8513,7 +8513,7 @@ html[xmlns] .slides {
   .flex-direction-nav .flex-next {
     opacity: 1;
     right: 10px; } }
-/* 
+/*
  * 	Core Owl Carousel CSS File
  *	v1.3.3
  */
@@ -8580,7 +8580,7 @@ html[xmlns] .slides {
   -ms-transform: translate3d(0, 0, 0); }
 
 /*
-* 	Owl Carousel Owl Demo Theme 
+* 	Owl Carousel Owl Demo Theme
 *	v1.3.3
 */
 .owl-carousel .owl-controls {
@@ -8649,12 +8649,12 @@ html[xmlns] .slides {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center; }
 
-/* 
- * Tipper v3.1.0 - 2014-11-25 
- * A jQuery plugin for simple tooltips. Part of the formstone library. 
- * http://formstone.it/tipper/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+/*
+ * Tipper v3.1.0 - 2014-11-25
+ * A jQuery plugin for simple tooltips. Part of the formstone library.
+ * http://formstone.it/tipper/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
  */
 .tipper {
   width: 1px;
@@ -8754,15 +8754,15 @@ html[xmlns] .slides {
   border-right: 5px solid transparent;
   border-bottom: 5px solid #323232; }
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Navigation Menu
   - Right Side Menu Button (Search, Cart, Bar, etc)
@@ -8780,7 +8780,7 @@ html[xmlns] .slides {
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style (Top, Bottom, Left, right)
   - Contents (Body, Container, Section, etc)
